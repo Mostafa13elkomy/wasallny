@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "197849697061",
+    "project_id": "wasalny-app-cbe2e",
+    "storage_bucket": "wasalny-app-cbe2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197849697061:android:1514b55418c1d6d47fe8cc",
+        "android_client_info": {
+          "package_name": "com.example.wasallny"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5YZPgzlpBoWilMweBgjf5NsO9NK303e4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
