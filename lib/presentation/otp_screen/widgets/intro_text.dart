@@ -29,9 +29,9 @@ late final phoneNumber;
                   style: const TextStyle(
                     color:MyColors.blue,
                     fontSize: 18
-                  )
-                )
-              ]
+                  ),
+                ),
+              ],
             ),
           ),
         ),

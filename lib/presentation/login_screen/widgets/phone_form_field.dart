@@ -42,7 +42,7 @@ class PhoneFormField extends StatelessWidget {
               style: const TextStyle(fontSize: 18, letterSpacing: 2.0),
               decoration: const InputDecoration(border: InputBorder.none),
               cursorColor: Colors.black,
-              keyboardType: TextInputType.phone,
+              keyboardType: TextInputType.number,
               validator: (value) {
                 if (value!.isEmpty) {
                   return 'Please enter your phone number!';

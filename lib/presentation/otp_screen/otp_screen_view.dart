@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wasallny/presentation/otp_screen/widgets/intro_text.dart';
 
 class OtpScreen extends StatelessWidget {
   const OtpScreen({super.key});
@@ -12,6 +13,10 @@ class OtpScreen extends StatelessWidget {
           margin: EdgeInsets.symmetric(horizontal: 32,vertical: 88),
           child: Column(
             children: [
+              OtpIntroText(),
+              SizedBox(
+                height: 88,
+              ),
               
             ],
           ),
