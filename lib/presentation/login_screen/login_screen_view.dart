@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:wasallny/constants/my_strings.dart';
 import 'package:wasallny/presentation/login_screen/widgets/custom_button.dart';
 import 'package:wasallny/presentation/login_screen/widgets/intro_text.dart';
 import 'package:wasallny/presentation/login_screen/widgets/phone_form_field.dart';
+import 'package:wasallny/presentation/otp_screen/otp_screen_view.dart';
 
 class LoginScreen extends StatelessWidget {
-    LoginScreen({super.key});
+  LoginScreen({super.key});
 
   final GlobalKey<FormState> _phoneFormKey = GlobalKey();
 
@@ -23,13 +25,18 @@ class LoginScreen extends StatelessWidget {
             children: [
               const IntroText(),
               const SizedBox(
-                height: 55,
+                height: 88,
               ),
               PhoneFormField(),
               const SizedBox(
-                height: 55,
+                height: 60,
               ),
-              const CustomButton(buttonText: 'Next')
+              CustomButton(
+                buttonText: 'Next',
+                onPressed: () {
+                  Navigator.pushNamed(context,otpScreen);
+                },
+              )
             ],
           ),
         ),

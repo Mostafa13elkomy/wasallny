@@ -24,7 +24,7 @@ class PinCodeFields extends StatelessWidget {
             borderWidth: 1,
             activeColor: MyColors.blue,
             inactiveColor: MyColors.blue,
-            activeFillColor: Colors.blue,
+            activeFillColor:MyColors.lightBlue,
             inactiveFillColor: Colors.white,
             selectedColor: MyColors.blue,
             selectedFillColor: Colors.white),

@@ -3,7 +3,7 @@ import 'package:wasallny/constants/my_constants.dart';
 
 class OtpIntroText extends StatelessWidget {
   OtpIntroText({super.key});
-late final phoneNumber;
+  final phoneNumber ='13131333';
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -25,7 +25,7 @@ late final phoneNumber;
               style:const TextStyle(color: Colors.black, fontSize: 18, height: 1.4),
               children: <TextSpan>[
                 TextSpan(
-                  text: '$phoneNumber',
+                  text: ' $phoneNumber',
                   style: const TextStyle(
                     color:MyColors.blue,
                     fontSize: 18

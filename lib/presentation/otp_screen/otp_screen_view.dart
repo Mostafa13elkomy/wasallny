@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:wasallny/presentation/login_screen/widgets/custom_button.dart';
 import 'package:wasallny/presentation/otp_screen/widgets/intro_text.dart';
+import 'package:wasallny/presentation/otp_screen/widgets/pin_code_fields.dart';
 
 class OtpScreen extends StatelessWidget {
   const OtpScreen({super.key});
@@ -14,10 +16,13 @@ class OtpScreen extends StatelessWidget {
           child: Column(
             children: [
               OtpIntroText(),
-              SizedBox(
+              const SizedBox(
                 height: 88,
               ),
-              
+            const PinCodeFields(),
+            SizedBox(height: 60,),
+              CustomButton(buttonText: 'Verify',
+              )
             ],
           ),
         ),
