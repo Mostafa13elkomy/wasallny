@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class PhoneFormField extends StatelessWidget {
     PhoneFormField({super.key});
-
   late String phoneNumber;
   @override
   Widget build(BuildContext context) {
@@ -15,13 +14,13 @@ class PhoneFormField extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 16),
               decoration: BoxDecoration(
                 border: Border.all(color: Colors.blue),
-                borderRadius: const BorderRadius.all(Radius.circular(6)),
+                borderRadius: const BorderRadius.all(Radius.circular(6),),
               ),
               child: Text(
                 generateCountryFlag() + ' +20',
                 style: const TextStyle(fontSize: 18, letterSpacing: 2.0),
               ),
-            )),
+            ),),
         const SizedBox(
           width: 16,
         ),
