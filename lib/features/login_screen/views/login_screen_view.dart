@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:wasallny/constants/my_strings.dart';
-import 'package:wasallny/presentation/login_screen/widgets/custom_button.dart';
-import 'package:wasallny/presentation/login_screen/widgets/intro_text.dart';
-import 'package:wasallny/presentation/login_screen/widgets/phone_form_field.dart';
-import 'package:wasallny/presentation/otp_screen/otp_screen_view.dart';
+import 'package:wasallny/features/login_screen/widgets/custom_button.dart';
+import 'package:wasallny/features/login_screen/widgets/intro_text.dart';
+import 'package:wasallny/features/login_screen/widgets/phone_form_field.dart';
+
 
 class LoginScreen extends StatelessWidget {
   LoginScreen({super.key});
@@ -33,6 +33,7 @@ class LoginScreen extends StatelessWidget {
               ),
               CustomButton(
                 buttonText: 'Next',
+                buttonColor: Colors.black,
                 onPressed: () {
                   Navigator.pushNamed(context,otpScreen);
                 },
