@@ -3,9 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:wasallny/constants/my_strings.dart';
 import 'package:wasallny/features/otp_screen/manager/cubit/phone_auth_cubit.dart';
 
-
-class PhoneNumberSubmitedBloc extends StatelessWidget {
-  PhoneNumberSubmitedBloc({super.key});
+class BuildPhoneVerificationBloc extends StatelessWidget {
+    BuildPhoneVerificationBloc({super.key});
   late String phoneNumber;
 
   @override
@@ -18,9 +17,9 @@ class PhoneNumberSubmitedBloc extends StatelessWidget {
         if (state is PhoneAuthLoading) {
           showProgressIndicator(context);
         }
-        if (state is PhoneSubmited) {
+        if (state is PhoneOtpVerified) {
           Navigator.pop(context);
-          Navigator.of(context).pushNamed(otpScreen, arguments: phoneNumber);
+          Navigator.of(context).pushReplacementNamed(otpScreen);
         }
         if (state is PhoneAuthFailure) {
           Navigator.pop(context);
@@ -59,3 +58,4 @@ class PhoneNumberSubmitedBloc extends StatelessWidget {
     );
   }
 }
+

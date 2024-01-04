@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:wasallny/constants/my_constants.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton(

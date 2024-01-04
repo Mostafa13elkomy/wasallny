@@ -3,7 +3,8 @@ import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:wasallny/constants/my_constants.dart';
 
 class PinCodeFields extends StatelessWidget {
-  const PinCodeFields({super.key});
+    PinCodeFields({super.key});
+  late String otpCode;
 
   @override
   Widget build(BuildContext context) {
@@ -24,15 +25,15 @@ class PinCodeFields extends StatelessWidget {
             borderWidth: 1,
             activeColor: MyColors.blue,
             inactiveColor: MyColors.blue,
-            activeFillColor:MyColors.lightBlue,
+            activeFillColor: MyColors.lightBlue,
             inactiveFillColor: Colors.white,
             selectedColor: MyColors.blue,
             selectedFillColor: Colors.white),
         animationDuration: Duration(milliseconds: 300),
         backgroundColor: Colors.white,
         enableActiveFill: true,
-        onCompleted: (code) {
-          // otpCode = code;
+        onCompleted: (submitedCode) {
+          otpCode = submitedCode;
           print("Completed");
         },
         onChanged: (value) {
